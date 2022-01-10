@@ -1,7 +1,7 @@
-all: libprocesshider.so
+all: libphi.so
 
-libprocesshider.so: processhider.c
-	gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+libphi.so: hider.c
+	gcc -Wall -fPIC -shared -o libphi.so hider.c -ldl
 
 .PHONY clean:
-	rm -f libprocesshider.so
+	rm -f libphi.so
